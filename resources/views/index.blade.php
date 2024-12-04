@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="fr">
 
 <head>
@@ -31,4 +32,15 @@
     </div>
 </body>
 
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    je suis bg que toid x
+</body>
+>>>>>>> main
 </html>
