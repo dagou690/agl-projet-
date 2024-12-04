@@ -12,7 +12,8 @@
     <div class="head">
         <div class="logo"> <img src="{{ asset('LCD-CI-removebg-preview (2).png') }}" alt=""></div>
         <ul>
-            <li class="connect">SE CONNECTER </li>
+        <button class="btn-connecter">SE CONNECTER</button>
+
             <li class="apropos">A PROPOS</li>
         </ul>
         <div class="presentation">
@@ -28,6 +29,13 @@
 
         </div>
 
+    </div>
+
+    <div class="films">
+        <div class="film">Film 1</div>
+        <div class="film">Film 2</div>
+        <div class="film">Film 3</div>
+        <div class="film">Film 4</div>
     </div>
 </body>
 
