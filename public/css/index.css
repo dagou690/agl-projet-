@@ -73,11 +73,14 @@ header p{
 }
 .logo{
     position: absolute;
-    
-}
-.logo img{
-    width: 120px;
-    height: 120px;
-    transform: translate(20%, -20%); 
-    
-}
+    z-index: 100;
+    box-shadow: 4px 4px 15px rgb(55, 53, 53);
+  
+  }
+  .titre-propos{
+    z-index: 101;
+    position: absolute;
+    margin-top: -60px;
+    color: red;
+    margin-left: 50px;
+  }
