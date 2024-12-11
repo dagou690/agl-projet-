@@ -14,120 +14,12 @@ header{
     background-position: center;
     height: 100vh;
     width: 100%;
-    box-shadow: inset 0px 150px 30px -30px rgba(0, 0, 0, 0.8);
-}
-.liste{
-    list-style: none;
-    display: flex;
-    gap: 50px;
-  margin-left: 35%;
-    position: absolute;
-    
-
-
-}
-.liste li{
-    margin-top: 50px;
-}
-.liste li a{
-    text-decoration: none;
-    color:white
+    height: 100px;
+    background-color: rgb(25, 65, 91);
    
 }
-<<<<<<< HEAD
 
 ul{
-    position: absolute;
-    display: flex;
-    margin-left: 75%;
-    margin-top: 30px ;
-     gap: 50px; 
-     list-style: none;
-    
-}
-.apropos{
-    color: white;
-}
-.btn-connecter {
-
-    background-color: rgb(215, 209, 26);
-    border-radius: 50px;
-    width: 130px;
-    text-align: center;
-    box-shadow: rgb(1, 1, 1) 2px 2px 6px;
-    border: none;
-    color: rgb(25, 65, 91);
-
-    cursor: pointer;
-}
-.btn-connecter:hover {
-    background-color: rgb(180, 170, 20);
-}
-.films {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 0 20px;
-    gap: 20px;
-    margin-top: 40%;
-}
-
-.film {
-    width: 22%;
-    height: 200px;
-    background-color: rgb(25, 65, 91);
-    color: white;
-    text-align: center;
-    line-height: 200px;
-    box-shadow: rgb(1, 1, 1) 2px 2px 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.film:hover {
-    background-color: rgb(42, 93, 128);
-}
-
-@media (max-width: 768px) {
-    .films {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .film {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-}
-
-.presentation{
-    width: 900px;
-    height: 400px;
-    background-color: rgb(25, 65, 91);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    box-shadow: rgb(1, 1, 1) 4px 4px 10px;
-    color: white;
-    
-    
-
-=======
-.material-icons{
-   margin-left: 72%;
-   margin-top: 45px;
- 
->>>>>>> 914a9def4e270f8c3912f6364b36a11e82b088d5
-}
-.logo{
-    width: 150px;
-    height: 150px;
-    margin-top: -30px;
     position: absolute;
   
 }
@@ -144,31 +36,25 @@ header p{
    
     border: solid red;
     color: white;
-    background-color: transparent;
-    box-shadow: 6px 6px 10px rgb(26, 25, 25);
-    border-radius: 50px;
-    margin-top: 300px;
-    margin-left: 50px;
-    
 }
-.planning-button{
-    width: 150px;
-    height: 30px;
-   
-    border: solid red;
-    color: white;
-    background-color: transparent;
-    box-shadow: 6px 6px 10px rgb(26, 25, 25);
+.connect{
+    background-color: rgb(215, 209, 26);
     border-radius: 50px;
+    width: 130px;
+    text-align: center;
+    box-shadow: rgb(1, 1, 1) 2px 2px 6px;
+    border: none;
+    color: rgb(25, 65, 91);
+
 }
 
-.carousel-item {
-    position: relative;
-    text-align: center; /* Centrer le texte horizontalement */
-  }
-  
-  .carousel-item h1,
-  .carousel-item p {
+.presentation{
+    width: 900px;
+    height: 400px;
+    background-color: rgb(25, 65, 91);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     z-index: 10; /* Place le texte au-dessus de l'image */
     color: white; /* Contraste sur l'image */
@@ -178,32 +64,20 @@ header p{
   .carousel-item h1 {
     top: 20%; /* Place le titre en haut de l'image */
     left: 50%;
-    transform: translateX(210%);
-    font-size: 2.5rem;
-  }
-  
-  .carousel-item p {
-    bottom: 10%; /* Place le paragraphe en bas de l'image */
-    left: 50%;
-    transform: translateX(85%);
-    width: 70%; /* Limite la largeur pour lisibilité */
-    font-size: 1rem;
-  }
+    transform: translate(-50%, -50%); 
+    box-shadow: rgb(1, 1, 1) 4px 4px 10px;
+    color: white;
+    
+    
 
-  .decoration-propos{
-    width: 100%;
-    height: 70px;
-    background: linear-gradient(to right, rgb(0, 0, 0) 30%, rgb(255, 0, 0) 90%);;
-    margin-top: -100px;
+}
+.logo{
     position: absolute;
-    z-index: 100;
-    box-shadow: 4px 4px 15px rgb(55, 53, 53);
-  
-  }
-  .titre-propos{
-    z-index: 101;
-    position: absolute;
-    margin-top: -60px;
-    color: red;
-    margin-left: 50px;
-  }
+    
+}
+.logo img{
+    width: 120px;
+    height: 120px;
+    transform: translate(20%, -20%); 
+    
+}
