@@ -1,7 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+
 
 Route::get('/', function () {
-    return view('welcome ');
+    return view('welcome');
 });
+
+Route::get('/connexion',[AuthController::class,'pageconnexion'])->name('connexion');
+Route::post('/connexion/login', [AuthController::class, 'login'])->name('connexion.login');
+Route::post('/connexion/register', [AuthController::class, 'register'])->name('connexion.register');
+Route::post('/deconnexion', [AuthController::class, 'logout'])->name('deconnexion');
