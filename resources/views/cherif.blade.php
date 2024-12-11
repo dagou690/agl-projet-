@@ -21,18 +21,12 @@
             </form>
             <p id="login-message">Veuillez vous connecter pour gérer la planification du festival.</p>
         </section>
-        <!-- Alternative Scenario 1: Connexion echouée -->
-        <section id="login-failed" style="display:none;">
-            <h2>La connexion a echouée</h2>
-            <p>Identifiants de connexion incorrects. Veuillez réessayer.</p>
-            <a href="#login">Retour à la connexion </a>
-        </section>
          <!-- Planning Management Section -->
         <section id="planning-management" style="display:none;">
             <h2>Gérer la planification</h2>
             <p id="welcome-message">Bienvenue, utilisateur responsable !</p>
             <button class="action-button">Publier le planning</button>
-            <button class="action-button">Modifier la planification</button>
+            <button class="action-button">Modifier la planning</button>
             <button class="action-button">Supprimer le planning</button>
 
             <!-- Publier Planning Section -->
