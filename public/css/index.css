@@ -14,7 +14,7 @@ header{
     background-position: center;
     height: 100vh;
     width: 100%;
-    box-shadow: inset 0px 150px 30px -30px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0px 150px 30px -30px rgba(38, 41, 36, 0.766)
 }
 .liste{
     list-style: none;
@@ -22,21 +22,39 @@ header{
     gap: 50px;
   margin-left: 35%;
     position: absolute;
+ 
     
 
 
 }
-.liste li{
+.liste1,.liste2,.liste3{
     margin-top: 50px;
+    padding:  10px;
+    margin-right: 30px;
+    margin-left: -50px;
+    transition: transform 0.3s ease;
+}
+.liste1:hover{
+  transform: scale(1.2);
+}
+.liste2:hover{
+  transform: scale(1.2);
+}
+.liste3:hover{
+  transform: scale(1.2);
 }
 .liste li a{
     text-decoration: none;
-    color:white
+    color:white;
    
+}
+.material-icons:hover{
+  transform: scale(1.2)
 }
 .material-icons{
    margin-left: 72%;
    margin-top: 45px;
+   transition: transform 0.3s ease;
  
 }
 .logo{
@@ -53,6 +71,12 @@ header p{
     margin-left: 50px;
     font-weight: 700;
 }
+.film-button:hover{
+  transform: scale(1.2)
+}
+.planning-button:hover{
+  transform: scale(1.2)
+}
 .film-button{
     width: 150px;
     height: 30px;
@@ -64,6 +88,7 @@ header p{
     border-radius: 50px;
     margin-top: 300px;
     margin-left: 50px;
+    transition: transform 0.3s ease;
     
 }
 .planning-button{
@@ -75,6 +100,7 @@ header p{
     background-color: transparent;
     box-shadow: 6px 6px 10px rgb(26, 25, 25);
     border-radius: 50px;
+    transition: transform 0.3s ease;
 }
 
 .carousel-item {
@@ -122,4 +148,150 @@ header p{
     color: red;
     margin-left: 50px;
   }
+  .vivez-festival{
+    width: 520px;
+    margin-left: 30%;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: solid rgb(0, 0, 0);
+    border-radius:50px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    box-shadow: 3px 3px 15px rgb(44, 43, 43);
+  }
+  .film-planning-int{
+  display: flex;
+  margin: 50px 0px 0px 430px;
+  gap: 10%;
+  color: red;
+  font-size: 40px;
   
+  
+    
+  
+  }
+  .fim-img{
+    
+    transition: transform 0.3s ease;
+  }
+  .fim-img:hover{
+    transform: scale(1.2);
+  }
+  .planning-img{
+    transition: transform 0.3s ease;
+  }
+  .planning-img:hover{
+    transform: scale(1.2);
+  }
+  .h3-1{
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 80px;
+  }
+  
+  .h3-2{
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 345px;
+  }
+  .nos-jury{
+ gap: 7%;
+ display: flex;
+ margin-left: 10%;
+ margin-top: 50px;
+ 
+  }
+  .jury{
+    width: 520px;
+    margin-left: 30%;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: solid rgb(0, 0, 0);
+    border-radius:50px;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 30px;
+    box-shadow: 3px 3px 15px rgb(44, 43, 43);
+
+  }
+  footer{
+    margin-top: 200px;
+    height: 100px;
+    background-color: red;
+  
+    color: white;
+    
+
+  }
+  footer h4{
+    position:absolute;
+    margin-top: 40px;
+    font-size: 15px;
+    margin-left: 43%;
+  }
+  .logo- {
+    position: absolute;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 75%;
+    gap: 35%;
+  }
+  .facebook{
+    height: 27px;
+    margin: 5px;
+  }
+
+  .footer-form {
+    position: absolute;
+   height: 150px;
+    
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ajustez la largeur selon vos besoins */
+   margin-top: -50px;
+   border: solid red;
+}
+
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+ textarea {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea::placeholder{
+  font-size: 10px;
+}
+ textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+
+}
+
+.button- {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-:hover {
+    background-color: #218838;
+}
