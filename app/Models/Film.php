@@ -25,4 +25,9 @@ class Film extends Model
     {
         return $this->belongsTo(Producteur::class);
     }
+    public function notes()
+    {
+        return $this->hasMany(Note::class);  // Assurez-vous que le modèle Note existe
+    }
 }
+
