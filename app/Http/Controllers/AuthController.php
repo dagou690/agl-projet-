@@ -11,6 +11,10 @@ class AuthController extends Controller
 {
     public function pageconnexion()
     {
+        if (Auth::check()) {
+            return redirect()->route('accueil');  // Redirige vers la page d'accueil si l'utilisateur est déjà connecté
+        }
+        
         return view('connexion');
     }
 
@@ -24,6 +28,8 @@ class AuthController extends Controller
         'name' => 'required|string|max:255',
         'email' => 'required|email|unique:users,email',
         'password' => 'required|string|min:8',
+    ], [
+        'email.unique' => 'Cet email est déjà enregistré. Veuillez en choisir un autre.',
     ]);
 
     // Vérifier si l'email existe déjà
@@ -54,7 +60,7 @@ class AuthController extends Controller
    
     if (Auth::attempt($request->only('email', 'password'))) {
         $request->session()->regenerate();
-        return redirect()->route('welcome'); // Changez 'accueil' en la route de votre page principale
+        return redirect()->route('accueil'); // Changez 'accueil' en la route de votre page principale
     }
 
     return back()->withErrors([
@@ -67,6 +73,6 @@ public function logout(Request $request)
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('connexion.form')->with('success', 'Vous avez été déconnecté.');
+        return redirect()->route('welcome')->with('success', 'Vous avez été déconnecté.');
     }
 }
